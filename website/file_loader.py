@@ -70,7 +70,7 @@ try:
     new_file = f"{path}/tmp-{filename}-{new_filename}"
 
     mv = subprocess.run(
-        ["mv", f"{output}", f"{path}/{filename}-{new_filename}"],
+        ["mv", f"{output}", f"{path}/tmp-{filename}-{new_filename}"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=True
